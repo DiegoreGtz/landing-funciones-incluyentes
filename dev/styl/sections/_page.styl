@@ -1,0 +1,117 @@
+.info
+	max-width 1000px
+	margin 1em auto
+	text-align center
+	
+	&-poster
+		display inline-block
+		vertical-align top
+		max-width 180px
+		
+	&-container
+		
+		display block
+		width 90%
+		margin 0 auto
+		+above(800px)
+			display inline-block
+			width calc(80% - 200px)
+			padding 0 1rem
+		
+		
+.poster
+	max-width 180px
+	margin 0
+	padding 0
+	
+.movie
+	&-title
+		max-width 460px
+		margin 10px auto
+		
+		+above(800px)
+			margin 10px 0
+	
+	&-settings
+		border-top 1px solid white
+		border-bottom @border-top
+		padding 10px 0
+		text-align center
+		+above(600px)
+			text-align left
+		
+		
+		
+				
+		&-detail,
+		&-format
+			color $cyan
+			montseL()
+			display inline-block
+			vertical-align middle
+
+			img 
+				max-width 100px
+				margin 0 10px
+		
+		&-detail
+			width 90%
+			display block
+			max-width 400px
+			margin 10px auto
+			
+			+above(600px)
+				padding-right 40px
+				width calc(100% - 260px)
+				display inline-block
+				
+	&-schedule
+		text-align left
+		margin 1em 0
+		
+.schedule
+	&-title
+		color white
+		margin 1em 0
+		letter-spacing 1px
+		montseL()
+		font-size 1.2rem
+		>strong
+			montseM()
+	&-card
+		margin 1rem 0
+		background-color white
+		border-radius 5px
+		box-shadow 0 3px 5px rgba(darken($blue, 20%), .2)
+		padding 10px 1rem
+		montseL()
+		
+.card
+	&-info
+		padding  10px 0 
+		&:first-child
+			border-bottom 1px solid lightgray
+	
+	&-cinema
+		color $blue
+		margin-bottom 10px
+		font-size 1.2em
+		
+	&-location
+		display inline-block
+		width calc(100% - 90px)
+		font-size .9em
+		
+.ico-location
+	width 45px
+	height @width
+	display inline-block
+	vertical-align text-bottom
+	background url('../img/ico-location.png') no-repeat center center / contain
+
+.fi-detail,
+.fi-kind
+	display none
+	&.is-active
+		display block
+		

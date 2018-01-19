@@ -1,0 +1,106 @@
+html
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+
+*, *:before, *:after
+	-webkit-box-sizing inherit
+	-moz-box-sizing inherit
+	box-sizing inherit
+	
+* 
+	-webkit-font-smoothing antialiased
+	-moz-font-smoothing greyscale
+	font-smoothing antialiased
+
+
+/* General styles */
+::-moz-selection {  }
+::selection {  }
+a
+	text-decoration none
+	cursor pointer
+
+a:visited{ }
+
+address{  }
+
+aside{  }
+
+b, strong
+	font-weight bold
+
+
+// BASIC STYLE
+
+html,
+body
+	width 100%
+	height 100%
+	
+body
+	position relative
+	background #0a599e url('../img/bg-img.jpg') no-repeat center top / cover
+	color rgba(black, .7)
+	
+	&.no-scrolling
+		height 100%
+		overflow hidden
+
+blockquote{  }
+
+button
+	-webkit-appearance none
+	margin-bottom 0
+	border 0
+	
+button:hover,
+button:active,
+button:focus
+	outline: 0
+
+caption, th, td{  }
+
+
+
+h1
+	font-size 2.125em
+	
+h2{  }	
+
+h3
+	font-size 1.875em
+h4
+	font-size 1.25em
+	
+h5{  }
+h6{  }
+
+i, em{  }
+
+img
+	width 100%
+
+input, select, textarea
+	&:focus
+		outline 0
+
+input[type=radio],
+input[type=checkbox],
+input[type=date],
+input[type=password]
+	&:focus
+		outline 0
+
+	
+label{  }
+
+li{  }
+
+select{  }
+
+select option{  }
+
+table{ }
+
+ul, ol{  }

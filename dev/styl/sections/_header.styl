@@ -1,0 +1,66 @@
+.header
+	width 100%
+	background-color $blue
+	border-bottom 1px solid $yellow
+	
+	&-container
+		max-width 1140px
+		margin 0 auto
+
+.logo
+	width 80%
+	max-width 350px
+	margin 0 auto
+	display block
+	vertical-align middle
+	padding 10px 0
+	+above(860px)
+		display inline-block
+		margin 0
+	
+	&-img
+		display block
+
+.nav
+	vertical-align middle
+	display block
+	+above(860px)
+		vertical-align middle
+		float right
+		display inline-block
+	
+	&-list
+		margin 0 auto
+		text-align center
+		background-color darken($blue, 20%)
+		+above(860px)
+			display inline-block
+			text-align right
+			background-color $blue
+		
+	&-item
+		width 30%
+		max-width 220px
+		height 100%
+		display inline-block
+		text-align center
+		
+		
+		
+	&-link
+		vertical-align middle
+		width 100%
+		font-size .75em
+		padding 14px 7px
+		text-align center
+		text-decoration none
+		color white
+		display inline-block
+		min-height:68px
+		montseL()
+		transition .15s all ease-in-out
+		
+		&:hover
+			color $blue
+			background $yellow
+	

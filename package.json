@@ -1,0 +1,30 @@
+{
+  "name": "sitio-cinepolis-vr",
+  "version": "0.0.0",
+  "description": "Microsiotio informativo sobre la experiencia VR de Cinépolis",
+  "main": "gulpfile.js",
+  "private":true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "autoprefixer-stylus": "^0.14.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "nib": "^1.1.2",
+    "gulp-changed": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-notify": "^3.0.0",
+    "browser-sync": "^2.18.13"
+  }
+}
