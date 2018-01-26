@@ -8,25 +8,46 @@
 		margin 0 auto
 
 .logo
-	width 80%
-	max-width 350px
+	width 100%
+	text-align center
 	margin 0 auto
 	display block
 	vertical-align middle
 	padding 10px 0
 	+above(860px)
+		width 50%
 		display inline-block
 		margin 0
 	
 	&-img
-		display block
+		display inline-block
+		vertical-align middle
+		max-width 200px
+		padding-right 1rem
+		margin-right 1rem
+		
+		+above(515px)
+			border-right 1px solid $yellow
+	
+	&-copy
+		color white
+		montseL()
+		max-width 300px
+		font-size 1rem
+		display inline-block
+		vertical-align middle
+		padding 10px 
+		+above(515px)
+			text-align left
 
 .nav
+	width 100%
 	vertical-align middle
 	display block
 	+above(860px)
+		width 49%
 		vertical-align middle
-		float right
+		//float right
 		display inline-block
 	
 	&-list
@@ -45,7 +66,12 @@
 		display inline-block
 		text-align center
 		
-		
+		&-active
+			.nav-link
+				color $blue
+				background $yellow
+				
+	
 		
 	&-link
 		vertical-align middle
@@ -63,4 +89,7 @@
 		&:hover
 			color $blue
 			background $yellow
-	
+		
+		&--active
+			color: #0a4e89;
+			background: #ffce0d	

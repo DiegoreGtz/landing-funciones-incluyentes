@@ -1,7 +1,9 @@
 .info
 	max-width 1000px
 	margin 1em auto
-	text-align center
+	padding-top: 1em
+	text-align: center
+	position: relative
 	
 	&-poster
 		display inline-block
@@ -9,7 +11,6 @@
 		max-width 180px
 		
 	&-container
-		
 		display block
 		width 90%
 		margin 0 auto
@@ -26,10 +27,15 @@
 	
 .movie
 	&-title
-		max-width 460px
+		//max-width 460px
 		margin 10px auto
+		text-align center
+		color white
+		montseB()
+		font-size 36px
 		
 		+above(800px)
+			text-align left
 			margin 10px 0
 	
 	&-settings
@@ -107,11 +113,81 @@
 	height @width
 	display inline-block
 	vertical-align text-bottom
-	background url('../img/ico-location.png') no-repeat center center / contain
+	background url('//static.cinepol.is/landings/funciones-incluyentes/imagenes/ico-location.png') no-repeat center center / contain
 
-.fi-detail,
-.fi-kind
-	display none
+.fi
+	&-detail,
+	&-kind
+		&-txt
+			border-left: .2em solid #2ab1e0;
+			padding: .6em 1em;
+			text-align: left;
+			color: #435464
+	
+	&-kind
+		&-title
+			color: #435464
+			text-align left
+			margin-bottom 10px
+
+		&-images
+			padding 16px
+			img
+				width: 49%;
+				margin-left: 2%
+				&:first-child
+					margin 0
+				
+			
+
+@media only screen and (min-width:1000px)
+
+	.fi-kind-col 
+		float: left;
+		width: 49%;
+		margin-left: 2%
+		&:first-child 
+			margin: 0
+	
+
+.ap-slide
+	font-family: Montserrat, sans-serif;
+	background-color: #fff;
+	padding: 3.4em 1em 1em;
+	position: absolute;
+	top: 0;
+	z-index: 12;
+	opacity: 0;
+	display: none;
+	-webkit-transition: .3s all;
+	transition: .3s all;
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+	-webkit-box-shadow: 1px 1px 1em rgba(0, 0, 0, .75);
+	box-shadow: 1px 1px 1em rgba(0, 0, 0, .75);
+	height: 0
+	
 	&.is-active
-		display block
+		display: block;
+		opacity: 1;
+		height: 18em
 		
+.ap-area
+	height: 100%;
+	overflow: auto
+
+.close-this
+	font-weight: 300;
+	border: 1px solid green
+	border-radius: 1em;
+	width: 24px;
+	height: 24px;
+	display: block;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	font-size: 1em;
+	line-height: 20px;
+	color: green
+	
+
